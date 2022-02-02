@@ -1,0 +1,80 @@
+.info_box {
+    @apply bg-[$primary];
+    @apply pt-8;
+    
+    .info_list {
+        @apply p-4;
+        .title_box {
+            @apply items-center;
+            .title_list {
+                @apply text-white mr-4;
+            }
+            button {
+                @apply text-zinc-300 hover:text-white transition-colors ease-in-out;
+                @apply text-lg;
+                @apply flex items-center;
+            }
+        }
+        form {
+            input {
+                @apply bg-transparent outline-none flex w-full -my-2;
+                @apply text-zinc-300 placeholder-zinc-300;
+                @apply font-['BasisGrotesquePro-Regular'] text-[2rem];
+    
+                &:focus {
+                    @apply outline-none placeholder-zinc-300;
+                }
+            }
+        }
+        .alert_title {
+            @apply text-zinc-300 text-xs;
+            @apply mt-2;
+        }
+    }
+
+    .progress {
+        @apply px-4;
+        .progress_bar {
+            @apply mb-2 relative;
+            @apply bg-zinc-200 w-full h-1 rounded-full;
+
+            .progress_done {
+                @apply absolute top-0 left-0;
+                @apply bg-[$enfasis] w-0 h-full rounded-full;
+                @apply transition-all ease-in;
+            }
+        }
+        .progress_info {
+            @apply flex;
+            p {
+                @apply text-white text-sm;
+                @apply mr-1;
+            }
+        }
+    }
+
+    .functions_box {
+        @apply p-4;
+        @apply overflow-x-auto;
+
+        button {
+            @apply mr-2;
+            p {
+                @apply truncate;
+            }
+            i {
+                @apply text-base text-[$enfasis];
+                @apply flex justify-center items-center;
+            }
+        }
+        button.add_task {
+            @include button;
+            p {
+                @apply mr-2;
+            }
+        }
+        button.filter {
+            @include out_button;
+        }
+    }
+}

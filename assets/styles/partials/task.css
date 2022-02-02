@@ -1,0 +1,103 @@
+.task {
+    @apply bg-white hover:bg-zinc-50 rounded-lg overflow-hidden h-[70px];
+    @apply transition-colors ease-in drop-shadow-peque;
+    @apply flex m-4 items-center justify-between;
+
+    .task_info {
+        @apply h-full w-full truncate;
+        @apply flex items-center;
+        @apply cursor-pointer;
+
+        .label {
+            @apply flex w-2 justify-center items-center h-full mr-4;
+            @apply transition-all duration-300 ease-in-out;
+            @apply bg-[$primary] hover:bg-[$enfasis];
+
+            &.on_click {
+                @apply w-1/4;
+                
+                .complete {
+                    @apply flex justify-center items-center;
+                    @apply h-full w-full;
+                }
+            }
+
+            .complete {
+                @apply hidden;
+                p {
+                    @apply uppercase text-sm text-white ;
+                    @apply text-center mr-2;
+                    @apply hidden;
+                    @apply md:block;
+                }
+                i {
+                    @apply fill-[$primary];
+                    @apply flex items-center justify-center;
+                    @apply text-white text-lg;
+                }
+            }
+        }
+        .task_title {
+            @apply flex truncate w-full;
+            i {
+                @apply hidden;
+            }
+            p {
+                @apply text-left truncate;
+            }
+        }
+    }
+    .close_task {
+        @apply flex items-center justify-center p-4;
+
+        i {
+            @apply text-lg;
+            @apply text-[$red] hover:text-orange-700;
+        }
+    }
+    .reset_task {
+        @apply hidden;
+        svg {
+            @apply w-4;
+            .reset {
+                @apply text-white;
+            }
+        }
+    }
+
+    &.done {
+        @apply bg-transparent border-[.1rem] border-[$primary];
+        @apply drop-shadow-none;
+        .task_info {
+            @apply p-4;
+            @apply cursor-default;
+            .label {
+                @apply hidden;
+                .complete {}
+            }
+            .task_title {
+
+                i {
+                    @apply fill-[$primary];
+                    @apply flex items-center mr-4;
+                    @apply text-[$enfasis] text-lg;
+                }
+                p {}
+            }
+        }
+
+        .close_task {
+            @apply hidden;
+            svg {
+                .close {}
+            }
+        }
+        .reset_task {
+            @apply flex p-4;
+            i {
+                @apply flex items-center justify-center;
+                @apply text-zinc-400 text-xl hover:text-zinc-500;
+            }
+        }
+    }
+}

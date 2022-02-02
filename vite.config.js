@@ -3,4 +3,8 @@ const env = require("dotenv").config();
 
 module.exports = defineConfig({
   base: "/" + process.env.GIT_REPO  + "/",
+  server: {
+    host: true
+  }
 });
+

@@ -1,0 +1,45 @@
+.new_task_container {
+    
+        @apply fixed top-0 z-50;
+        @apply h-screen w-full flex justify-center items-center;
+        @apply bg-zinc-900/50;
+        .new_box {
+            @apply flex justify-center items-center;
+            @apply h-fit w-[300px] px-4 py-8 rounded-2xl;
+            @apply bg-[$primary];
+            .new_content {
+                @apply w-full;
+                h3 {
+                    @apply text-white text-center;
+                    @apply mb-8;
+                }
+                form {
+                    input {
+                        @apply p-4 rounded-full w-full mb-2;
+                        @apply bg-transparent border-2 border-white;
+                        @apply text-white placeholder-zinc-300;
+
+                        &:focus {
+                            @apply outline-none bg-white/[25%] placeholder-white;
+                        }
+                    }
+                    p {
+                        @apply flex justify-center;
+                        @apply text-sm text-zinc-300;
+                        @apply mb-2;
+                    }
+                    .buttons {
+                        @apply flex justify-around;
+                        button {
+                            @include button;
+                        }
+                        button.cancel {
+                            @include button;
+                            @apply bg-zinc-200 hover:bg-[$red] hover:text-white;
+                            @apply transition-colors ease-in;
+                        }
+                    }
+                }
+            }
+        }
+    }

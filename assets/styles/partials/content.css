@@ -1,0 +1,41 @@
+.content {
+    @apply overflow-y-scroll;
+
+    .empty_box {
+        @apply hidden;
+    }
+
+    &.empty {
+
+        @apply flex h-3/4;
+        @apply justify-center items-center;
+        
+        .empty_box {
+            @apply flex;
+            @apply justify-center items-center;
+
+            .empty_elements {
+                .empty_cactus {
+                    @apply flex justify-center items-center;
+                    @apply mb-4;
+                    svg {
+                        @apply w-10;
+                        .cactus {
+                            @apply fill-zinc-400;
+                        }
+                    }
+                }
+                .empty_text {
+                    @apply flex justify-center items-center;
+                    p {
+                        @apply text-zinc-400 text-center;
+                    }
+                }
+            }
+            &.no_task {
+                @apply flex;
+            }
+        }
+    }
+    .tasks_list {}
+}

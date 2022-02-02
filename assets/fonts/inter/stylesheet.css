@@ -1,40 +1,3 @@
-$font_route_a: '../fonts/basis-grotesque';
-
-@font-face {
-    font-family: 'Basis Grotesque Pro';
-    src: url('BasisGrotesquePro-Regular.eot');
-    src: url('BasisGrotesquePro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('BasisGrotesquePro-Regular.woff') format('woff'),
-        url('BasisGrotesquePro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro';
-    src: url('BasisGrotesquePro-Light.eot');
-    src: url('BasisGrotesquePro-Light.eot?#iefix') format('embedded-opentype'),
-        url('BasisGrotesquePro-Light.woff') format('woff'),
-        url('BasisGrotesquePro-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Basis Grotesque Pro';
-    src: url('BasisGrotesquePro-Bold.eot');
-    src: url('BasisGrotesquePro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('BasisGrotesquePro-Bold.woff') format('woff'),
-        url('BasisGrotesquePro-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-$font_route_a: '../fonts/inter';
-
 @font-face {
     font-family: 'Inter';
     src: url('Inter-Thin.eot');
@@ -142,3 +105,4 @@ $font_route_a: '../fonts/inter';
     font-style: normal;
     font-display: swap;
 }
+

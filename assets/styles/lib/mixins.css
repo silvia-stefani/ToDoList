@@ -1,3 +1,16 @@
-@mixin example_mixin() {
-    display: flex;
+@mixin button {
+    @apply flex justify-center items-center;
+    @apply bg-white hover:bg-zinc-200 transition-all ease-in-out;
+    @apply text-zinc-900 fill-zinc-900;
+    @apply px-4 py-2 drop-shadow-peque;
+    @apply rounded-full;
 }
+
+@mixin out_button {
+    @apply flex justify-center items-center;
+    @apply bg-transparent hover:bg-white/[25%] focus:bg-white/[25%] transition-all ease-in-out;
+    @apply text-white fill-white;
+    @apply px-4 py-2 drop-shadow-peque;
+    @apply rounded-full border-[.1rem];
+}
+

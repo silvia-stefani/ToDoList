@@ -4,7 +4,6 @@ import "./../assets/styles/style.css";
 import "phosphor-icons";
 import anime from 'animejs/lib/anime.es.js';
 import Sortable from 'sortablejs';
-import { info } from "autoprefixer";
 
 window.addEventListener("load", () => {
     

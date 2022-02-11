@@ -1,23 +1,18 @@
-## Inicializar correctamente el boiler con vite
-Para empezar tenemos que crear un archivo en la carpeta raíz llamado `.env` <br>
-En este archivo configuramos todo lo necesario para el despliegue de la aplicación. 
-```
-GIT_USER=<tu-nombre-en-github>
-GIT_REPO=<tu-repo>
-```
+<h1>To-Do List</h1>
 
-## Empezar a trabajar con viteJS
-### Insalación de dependencias
-Para ello tenemos que lanzar el comando `yarn` para que nos instale las dependencias del proyecto, de este modo aparecerá la carpeta `node_modules`. 
-### Servidor de desarrollo
-Una vez tengamos las dependencias, en consola lanzamos el comando `yarn dev` y ya se lanza el servidor, con live-reload y con todo lo necesario
-### Parar el servidor
-Si queremos parar el servidor, con foco en la consola, hacemos `Ctrl+D`, y vemos que el servidor para y que tenemos el prompt de consola de nuevo disponible.
-Esto lo hacemos para instalar nuevas dependencias, y luego volvemos a lanzar el servidor.
-### Publicar cambios en Git
-Para ello vamos a la pestaña de git de vscode, seleccionamos los archivos a anotar, y subimos los cambios a la rama donde estemos trabajando. 
-### Publicar en GitHub Pages
-Para ello tenemos un comando preparado que es `yarn deploy`, y se encarga de subir todo lo necesario a github para que funcione.
-### Limpiar la carpeta para almacenar
-Si queremos almacenar la carpeta en nuestro disco duro, podemos lanzar `yarn clean`, que quita la carpeta `node_modules`, y algunos archivos más que se crean durante el desarrollo.
+This is an exercise done on the programming lessons of the Interactive Design master of ESDMadrid.
+<br>
+Web design and layout (HTML and CSS) and JS implementation from zero, taking a vite boilerplate.
+<br>
+* Project with Tailwind & SASS
+
+## Demo
+
+
+https://silvia-stefani.github.io/ToDoList/
+
+<div style="display:flex">
+  <img height="350" alt="Captura de pantalla 2022-02-02 a las 22 26 10" src="https://user-images.githubusercontent.com/98710488/152240381-96cf57bc-4e4d-4b87-8e8f-8147c4788d31.png">
+  <img height="350" alt="Captura de pantalla 2022-02-02 a las 22 30 15" src="https://user-images.githubusercontent.com/98710488/152240541-7fa3877f-6d61-4036-a7b5-a0dd7d6d3090.png">
+</div>
 

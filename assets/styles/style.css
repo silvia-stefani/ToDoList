@@ -2,8 +2,18 @@
 @import "lib/mixins.css";
 @import "lib/fontface.css";
 
+@import "partials/info_list.css";
+@import "partials/task.css";
+@import "partials/add_task.css";
+@import "partials/content.css";
+@import "partials/borrar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  border: 1px solid tomato;
+  //border: 1px solid pink;
 }
 
 html,
@@ -11,7 +21,23 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #333;
-  background-color: #fff;
+  background-color: #F2F2F2;
   min-height: 100vh;
   font-family: $font_family_base;
+}
+
+h2 {
+  font-family: $font_family_special;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: $font_family_special;
+  font-size: 1.5rem;
+}
+
+p {}
+
+*:focus {
+  outline: none;
 }

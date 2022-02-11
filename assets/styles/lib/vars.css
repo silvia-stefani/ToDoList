@@ -1,15 +1,20 @@
-$font_family_base: 'Source Sans Pro', 'Helvetica', Arial, sans_serif;
+$font_family_base: 'Inter', 'Helvetica', Arial, sans_serif;
+$font_family_special: 'Basis Grotesque Pro', 'Darker Grotesque', sans_serif;
 $font_size_base: 16px;
 $font_weight_base: normal;
 $line_height_base: 1.4;
-$body_color: #333;
-$body_bg: #fff;
+$body_color: #333333;
+$body_bg: #F2F2F2;
 
 
 $headings_margin_bottom: 1em; 
 $paragraph_margin_bottom: 1em; 
 
 $dt_font_weight: bold; 
+
+$primary: #A242ED;
+$enfasis: #1d12bd;
+$red: #DD5000;
 
 $link_color: #345c8d; 
 $link_decoration: none; 
